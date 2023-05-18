@@ -33,6 +33,8 @@ $navbar_type       = get_theme_mod( 'NirTheme_navbar_type', 'collapse' );
 			<?php esc_html_e( 'Skip to content', 'NirTheme' ); ?>
 		</a>
 
-		<?php get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
+		<?php get_template_part( 'global-templates/navbar', "-collapse-bootstrap4.php" ); ?>
+		<?php if(is_front_page()){ ?>
+		<?php } ?>
 
 	</header><!-- #wrapper-navbar -->

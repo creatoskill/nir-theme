@@ -29,6 +29,10 @@ if ( ! function_exists( 'NirTheme_scripts' ) ) {
 
 		$css_version = $theme_version . '.' . filemtime( get_template_directory() . $theme_styles ); // @phpstan-ignore-line -- file exists
 		wp_enqueue_style( 'NirTheme-styles', get_template_directory_uri() . $theme_styles, array(), $css_version );
+		// cs mods
+		wp_enqueue_style( 'custom-styles-cs', get_template_directory_uri()."/css/custom-styles.css", array(), time() );
+		
+		wp_enqueue_style( 'helper-styles-cs', get_template_directory_uri()."/css/theme-helper.css", array(), time() );
 
 		// Fix that the offcanvas close icon is hidden behind the admin bar.
 		if ( 'bootstrap4' !== $bootstrap_version && is_admin_bar_showing() ) {

@@ -1,0 +1,210 @@
+.home-content.home-banner-cs {
+	min-height: 500px;
+	background-size: cover;
+	background-position: bottom;
+}
+.banner-box {
+	min-height: 450px;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	justify-content: center;
+}
+.banner-heading-cs {
+	font-size: 4rem;
+	color: white;
+	font-weight: 501;
+	font-family: DM Sans,Calibri,Arial,sans-serif;
+	line-height: 1rem;
+}
+.overlay-banner-cs {
+	background-color: #0000001c;
+}
+.navbar-brand {
+	color: white !important;
+	font-weight: 600;
+}
+#main-menu li a {
+	color: white;
+}
+#main-menu li a {
+	color: white;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+.search {
+	padding: 40px;
+	text-align: center;
+}
+#textboxGeo {
+	padding: 10px 25px;
+	border-radius: 30px;
+	border: 1px solid #acacac;
+	min-width: 520px !important;
+	width: 520px !important;
+	line-height: 2.4rem;
+}
+
+/* mobile responsive css */
+@media only screen and (max-width: 600px) {
+
+    #textboxGeo {
+        padding: 10px 25px;
+        border-radius: 40px;
+        border: 1px solid #acacac;
+        min-width: 220px;
+        line-height: 2rem;
+    }
+    .banner-row-1.banner-row {
+        padding: 0px 30px;
+    }
+    .banner-heading-cs {
+        font-size: 2rem;
+    }
+    .banner-row {
+        text-align: center;
+    }
+    #navbarNavDropdown {
+        background-color: white;
+        border-radius: 14px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    #main-menu li a {
+        color: #606060;
+    }
+
+  }
+  #full-width-page-wrapper {
+	/* height: 80%; */
+	width: 90%;
+	margin: 0 auto;
+	/* background: radial-gradient(circle, rgba(165,222,242,1) 35%, rgba(30,128,193,1) 100%); */
+	}
+	#full-width-page-wrapper-loginout {
+		/* height: 80%; */
+		width: 100%;
+		/* margin: 0 auto; */
+		background: radial-gradient(circle, rgba(165,222,242,1) 35%, rgba(30,128,193,1) 100%);
+	}
+	label {
+		font-size: 14px;
+		line-height: 1.5;
+		display: inline-block;
+		margin-bottom: 3px;
+		font-weight: 400;
+		font-family: "Poppins",Arial, Helvetica, sans-serif;
+	}
+	/* .input, input[type="checkbox"], input[type="text"], input[type="email"], input[type="password"] {
+		background: #fff;
+	} */
+	#main-nav {
+		border-bottom: 1px solid #ccc;
+	}
+	.nav-off-home-menu li a {
+		color: black !important;
+	}
+	.off-home-branding {
+		color: black !important;
+	}
+	.om-home-branding a {
+		color: white !important;
+	}
+	.main-box-registration-nir {
+		width: 50% !important;
+		padding: 5% 0 0;
+		margin: auto;
+	}
+	.nir_header {
+		text-align: center;
+	}
+	#nir_registration_form fieldset p {
+		width: 45%;
+		margin: 0 auto;
+	}
+	#nir_registration_form fieldset p input,textarea{
+		width: 100%;
+		margin: 0 auto;
+	}
+	#nir_registration_form fieldset p input {
+		font-size: 24px;
+		line-height: 1.33333333;
+		width: 100%;
+		border-width: .0625rem;
+		padding: .1875rem .3125rem;
+		margin: 0 6px 16px 0;
+		min-height: 40px;
+		max-height: none;
+	}
+	#nir_registration_form fieldset p input {
+		box-shadow: 0 0 0 transparent;
+		border-radius: 4px;
+		border: 1px solid #8c8f94;
+		background-color: #fff;
+		color: #2c3338;
+	}
+	.nir_header {
+		padding: 20px;
+		font-weight: bold;
+		font-family: "poppins",Arial;
+	}
+	.main-box-registration-nir {
+		width: 50% !important;
+		padding: 5% 0 0;
+		margin: auto;
+		background-color: white;
+		border-radius: 20px;
+	}
+	.submit-btn-register {
+		background-color: #1e80c1 !important;
+		font-size: 15px !important;
+		font-weight: 700;
+		color: white !important;
+		margin-top: 20px !important;
+		margin-bottom: 20px !important;
+	}
+	.submit-btn-register:hover {
+		background-color: #115380 !important;
+		font-size: 16px !important;
+	}
+	.nir_errors {
+		width: auto;
+		text-align: center;
+	}
+	.nir_errors span {
+		background-color: #f9c0be !important;
+		padding: 10px 20px;
+		margin: 4px !important;
+		display: inline-block;
+		border-radius: 8px;
+	}
+	.nir_errors span strong {
+		color: #ce6764 !important;
+	}
+	.main-box-registration-nir {
+		width: 50% !important;
+		padding: 5% 0 40px;
+		margin: auto;
+		background-color: white;
+		border-radius: 20px;
+	}
+	.navbar-off-home {
+		background-color: #1e80c140;
+	}
+	#main-menu li a {
+		padding-right: .5rem;
+		padding-left: .5rem;
+	}
+	#menu-item-cs a {
+		padding-top: 14px !important;
+		vertical-align: middle;
+		display: inline;
+	}
+
+	
+	/*display none*/
+	.geo-list {
+	display: none;
+    }
+    
+    

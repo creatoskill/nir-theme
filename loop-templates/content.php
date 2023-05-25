@@ -10,26 +10,36 @@ defined( 'ABSPATH' ) || exit;
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-
+<?php
+if(preg_match( '#^register(/.+)?$#', $wp->request) || preg_match( '#^login(/.+)?$#', $wp->request)){
+?>
 	<header class="entry-header">
 
-		<?php
-		the_title(
-			sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
-			'</a></h2>'
-		);
-		?>
+</header><!-- .entry-header -->
+<?php
+}else{
+?>
+	<header class="entry-header">
 
-		<?php if ( 'post' === get_post_type() ) : ?>
+	<?php
+	the_title(
+		sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
+		'</a></h2>'
+	);
+	?>
 
-			<div class="entry-meta">
-				<?php NirTheme_posted_on(); ?>
-			</div><!-- .entry-meta -->
+	<?php if ( 'post' === get_post_type() ) : ?>
 
-		<?php endif; ?>
+		<div class="entry-meta">
+			<?php NirTheme_posted_on(); ?>
+		</div><!-- .entry-meta -->
 
-	</header><!-- .entry-header -->
+	<?php endif; ?>
 
+</header><!-- .entry-header -->
+<?php
+}
+?>
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="entry-content">
